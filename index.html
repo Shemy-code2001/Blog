@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechPulse - Innovative Tech Insights</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.4/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/scrollmagic@2.0.8/scrollmagic/minified/ScrollMagic.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <div class="parallax-bg"></div>
+    <div id="mobile-menu" class="fixed inset-0 bg-black bg-opacity-95 z-50 hidden flex-col items-center">
+        <div class="flex justify-end w-full p-6">
+            <button id="close-menu" class="text-white text-3xl">
+                <i class="ri-close-line"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav-links text-center flex-grow">
+            <a href="#home" class="menu-item text-gray-300 hover:text-white transition">Home</a>
+            <a href="#insights" class="menu-item text-gray-300 hover:text-white transition">Insights</a>
+            <a href="#technologies" class="menu-item text-gray-300 hover:text-white transition">Technologies</a>
+            <a href="#community" class="menu-item text-gray-300 hover:text-white transition">Community</a>
+            <a href="#newsletter" class="menu-item px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">Subscribe</a>
+        </nav>
+    </div>
+    
+
+    <nav class="fixed w-full z-50 bg-gray-900 bg-opacity-90 backdrop-blur-md shadow-md">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
+            <a href="#" class="text-2xl font-bold text-blue-500 tracking-wider">TechPulse</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#home" class="text-gray-300 hover:text-white transition">Home</a>
+                <a href="#insights" class="text-gray-300 hover:text-white transition">Insights</a>
+                <a href="#technologies" class="text-gray-300 hover:text-white transition">Technologies</a>
+                <a href="#community" class="text-gray-300 hover:text-white transition">Community</a>
+                <a href="#newsletter" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">Subscribe</a>
+            </div>
+            <div id="menu-toggle">☰</div>
+        </div>
+    </nav>
+
+    <header id="home" class="relative min-h-screen flex items-center justify-center text-center py-20 px-4">
+        <div class="max-w-4xl mx-auto relative z-10">
+            <div id="typed-headline" class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
+                <span id="typed-output"></span>
+            </div>
+            <p class="text-xl md:text-2xl mb-10 text-gray-300 wave-animation">
+                Dive into cutting-edge technologies, innovative insights, and the future of digital transformation.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#insights" class="px-8 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition transform hover:scale-105 shadow-lg">
+                    Explore Insights
+                </a>
+                <a href="#community" class="px-8 py-3 border-2 border-white text-white rounded-lg hover:bg-white hover:text-gray-900 transition transform hover:scale-105">
+                    Join Community
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="technologies" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white">Emerging Technologies</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-morphism p-6 text-center">
+                    <i class="ri-robot-line text-5xl mb-4 text-blue-500 tech-icon"></i>
+                    <h3 class="text-xl font-bold mb-2 text-white">Artificial Intelligence</h3>
+                    <p class="text-gray-300">Exploring the frontiers of machine learning and neural networks.</p>
+                </div>
+                <div class="glass-morphism p-6 text-center">
+                    <i class="ri-secure-payment-line text-5xl mb-4 text-green-500 tech-icon"></i>
+                    <h3 class="text-xl font-bold mb-2 text-white">Blockchain</h3>
+                    <p class="text-gray-300">Decentralized technologies reshaping digital transactions.</p>
+                </div>
+                <div class="glass-morphism p-6 text-center">
+                    <i class="ri-cloud-line text-5xl mb-4 text-purple-500 tech-icon"></i>
+                    <h3 class="text-xl font-bold mb-2 text-white">Quantum Computing</h3>
+                    <p class="text-gray-300">Next-generation computing power and possibilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="community" class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white">Tech Community Hub</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-morphism p-6 text-center">
+                    <i class="ri-group-line text-5xl mb-4 text-blue-400"></i>
+                    <h3 class="text-xl font-bold mb-2">Developer Forums</h3>
+                    <p class="text-gray-300 mb-4">Connect with global tech enthusiasts and professionals.</p>
+                    <a href="#" class="text-blue-500 hover:underline">Join Discussion</a>
+                </div>
+                <div class="glass-morphism p-6 text-center">
+                    <i class="ri-lightbulb-line text-5xl mb-4 text-yellow-400"></i>
+                    <h3 class="text-xl font-bold mb-2">Tech Challenges</h3>
+                    <p class="text-gray-300 mb-4">Monthly coding and innovation challenges.</p>
+                    <a href="#" class="text-blue-500 hover:underline">Participate Now</a>
+                </div>
+                <div class="glass-morphism p-6 text-center">
+                    <i class="ri-lightbulb-line text-5xl mb-4 text-yellow-400"></i>
+                    <h3 class="text-xl font-bold mb-2">Webinar Series</h3>
+                    <p class="text-gray-300 mb-4">Expert talks on emerging technologies.</p>
+                    <a href="#" class="text-blue-500 hover:underline">View Schedule</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="py-16 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+        <div class="max-w-xl mx-auto text-center px-4">
+            <h2 class="text-4xl font-bold mb-6">Stay Informed</h2>
+            <p class="text-xl mb-10 opacity-90">Get the latest tech insights directly in your inbox.</p>
+            <form class="max-w-md mx-auto flex bg-white rounded-full overflow-hidden shadow-lg">
+                <input type="email" placeholder="Your professional email" class="flex-grow px-6 py-4 text-gray-700 focus:outline-none">
+                <button type="submit" class="bg-primary-color text-white px-6 hover:bg-blue-700 transition">
+                    Subscribe
+                </button>
+            </form>
+        </div>
+    </section>
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="font-bold mb-4">TechInsight</h3>
+                <p class="text-gray-400">Un blog dédié à l'exploration des technologies qui transforment notre monde.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Navigation</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-white">Accueil</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Articles</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Catégories</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Légal</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-white">Mentions Légales</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Politique de Confidentialité</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Suivez-Nous</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="ri-twitter-fill text-2xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="ri-linkedin-fill text-2xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="ri-github-fill text-2xl"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-8 border-t border-gray-800 pt-6">
+            <p>&copy; 2024 TechInsight. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
